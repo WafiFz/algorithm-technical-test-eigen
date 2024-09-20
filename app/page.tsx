@@ -1,6 +1,7 @@
-import { Algorithm1Section } from '../components/Algorithm1Section'
-import { Algorithm2Section } from '../components/Algorithm2Section'
-import { Algorithm3Section } from '../components/Algorithm3Section'
+import { Algorithm1Section } from "../components/Algorithm1Section";
+import { Algorithm2Section } from "../components/Algorithm2Section";
+import { Algorithm3Section } from "../components/Algorithm3Section";
+import { Algorithm4Section } from "../components/Algorithm4Section";
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
       <Algorithm1Section />
       <Algorithm2Section />
       <Algorithm3Section />
+      <Algorithm4Section />
     </main>
-  )
+  );
 }
