@@ -2,14 +2,23 @@
 
 import { useState } from "react";
 
-import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
-import { Button } from "@/components/ui/button";
-import { findLongestWord } from "@/lib/algorithms/algorithm2";
+import {
+  Card,
+  CardHeader,
+  CardTitle,
+  CardContent,
+} from "@/app/components/ui/card";
+import { Input } from "@/app/components/ui/input";
+import { Button } from "@/app/components/ui/button";
+import { findLongestWord } from "@/algorithms/algorithm2";
 
 export function Algorithm2Section() {
-  const [input, setInput] = useState("Saya sangat senang mengerjakan soal algoritma");
-  const [result, setResult] = useState(findLongestWord("Saya sangat senang mengerjakan soal algoritma"));
+  const [input, setInput] = useState(
+    "Saya sangat senang mengerjakan soal algoritma"
+  );
+  const [result, setResult] = useState(
+    findLongestWord("Saya sangat senang mengerjakan soal algoritma")
+  );
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -38,7 +47,8 @@ export function Algorithm2Section() {
         </form>
         <div className="mt-4">
           <p className="text-sm font-medium">
-            Longest Word: <span className="font-mono bg-muted p-1 rounded">{result}</span>
+            Longest Word:{" "}
+            <span className="font-mono bg-muted p-1 rounded">{result}</span>
           </p>
         </div>
       </CardContent>

@@ -1,10 +1,15 @@
 "use client";
 
 import { useState } from "react";
-import { countQueryMatched } from "../lib/algorithms/algorithm3";
-import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
-import { Textarea } from "@/components/ui/textarea";
-import { Button } from "@/components/ui/button";
+import { countQueryMatched } from "../../algorithms/algorithm3";
+import {
+  Card,
+  CardHeader,
+  CardTitle,
+  CardContent,
+} from "@/app/components/ui/card";
+import { Textarea } from "@/app/components/ui/textarea";
+import { Button } from "@/app/components/ui/button";
 
 export function Algorithm3Section() {
   const [input, setInput] = useState(JSON.stringify(["xc", "dz", "bbb", "dz"]));

@@ -1,10 +1,15 @@
 "use client";
 
 import { useState } from "react";
-import { reverseAlphabets } from "../lib/algorithms/algorithm1";
-import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
-import { Button } from "@/components/ui/button";
+import { reverseAlphabets } from "../../algorithms/algorithm1";
+import {
+  Card,
+  CardHeader,
+  CardTitle,
+  CardContent,
+} from "@/app/components/ui/card";
+import { Input } from "@/app/components/ui/input";
+import { Button } from "@/app/components/ui/button";
 
 export function Algorithm1Section() {
   const [input, setInput] = useState("NEGIE1");
@@ -37,7 +42,8 @@ export function Algorithm1Section() {
         </form>
         <div className="mt-4">
           <p className="text-sm font-medium">
-            Output: <span className="font-mono bg-muted p-1 rounded">{result}</span>
+            Output:{" "}
+            <span className="font-mono bg-muted p-1 rounded">{result}</span>
           </p>
         </div>
       </CardContent>

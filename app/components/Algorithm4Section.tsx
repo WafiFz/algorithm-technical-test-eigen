@@ -1,10 +1,15 @@
 "use client";
 
 import { useState } from "react";
-import { diagonalDifference } from "../lib/algorithms/algorithm4";
-import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
-import { Textarea } from "@/components/ui/textarea";
-import { Button } from "@/components/ui/button";
+import { diagonalDifference } from "../../algorithms/algorithm4";
+import {
+  Card,
+  CardHeader,
+  CardTitle,
+  CardContent,
+} from "@/app/components/ui/card";
+import { Textarea } from "@/app/components/ui/textarea";
+import { Button } from "@/app/components/ui/button";
 
 export function Algorithm4Section() {
   const [matrix, setMatrix] = useState(
