@@ -1,6 +1,6 @@
-import { Algorithm2Section } from '@/components/Algorithm2Section'
 import { Algorithm1Section } from '../components/Algorithm1Section'
-
+import { Algorithm2Section } from '../components/Algorithm2Section'
+import { Algorithm3Section } from '../components/Algorithm3Section'
 
 export default function Home() {
   return (
@@ -8,6 +8,7 @@ export default function Home() {
       <h1 className="text-4xl font-bold mb-8">Algorithm Showcase</h1>
       <Algorithm1Section />
       <Algorithm2Section />
+      <Algorithm3Section />
     </main>
   )
 }
